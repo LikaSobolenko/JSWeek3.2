@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input value="" id="number">
+    <input value="Результат" id="result" readonly>
+    <button onclick="square()">Возвести в квадрат</button>
+
+
+
+    <script>
+        function square() {
+            let number = document.getElementById('number');
+            document.querySelector('#result').value = (+number.value) ** 2;
+        }
+    </script>
+</body>
+
+</html>
